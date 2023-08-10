@@ -109,7 +109,7 @@ class DS2AboutMe extends StatelessWidget {
   }
 
   Widget titles(BuildContext context) {
-    return SizedBox(
+    return const SizedBox(
       //color: Colors.red,
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
