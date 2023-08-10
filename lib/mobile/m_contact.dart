@@ -4,7 +4,6 @@ import 'package:flutter/services.dart';
 import '../statics/data_values.dart';
 import '../statics/key_holders.dart';
 import '../theme/app_theme.dart';
-import '../widgets/container_banner.dart';
 import '../widgets/frame_title.dart';
 import '../widgets/social_profiles.dart';
 
@@ -26,7 +25,8 @@ class MS7Contact extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                const FrameTitle(title: DataValues.contactTitle, description: DataValues.contactDescription),
+                const FrameTitle(
+                    title: DataValues.contactTitle, description: DataValues.contactDescription),
                 const SizedBox(height: 30.0),
                 SelectableText(DataValues.contactBanner,
                     style: TextStyle(

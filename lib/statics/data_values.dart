@@ -90,19 +90,21 @@ class DataValues {
       'To grow personally and professionally, while making a positive impact on the community.';
   static const String aboutMeBanner = 'You can find my';
   static const String aboutMeBannerTitle = 'public profiles';
-  static const String aboutMeBannerWeb = 'Visit tripixellabs.com/abhishek to find all my public profiles.';
+  static const String aboutMeBannerWeb =
+      'Visit tripixellabs.com/abhishek to find all my public profiles.';
 
   // Education
   static const String educationTitle = 'Education';
   static const String educationDescription =
       'My educational background is diverse and has been acquired from various sources. In this section, you can learn about my formal education and other learning experiences. It includes information about my schooling, undergraduate institution, and the various learning platforms I\'ve engaged with for my education.';
   static const String educationOrg1Title = 'Goa University';
-  static const String educationOrg1Course1Name = 'ECE';
+  static const String educationOrg1Course1Name = 'Bachelor of Computer Application (BCA)';
   static const String educationOrg1Course1Grade = '68%';
   static const String educationOrg1Course1Year = '2015 - 2018';
 
   static const String educationOrg2Title = 'Jetking';
-  static const String educationOrg2Course1Name = 'Certified Hardware and Networking Professional (JCHNP)';
+  static const String educationOrg2Course1Name =
+      'Certified Hardware and Networking Professional (JCHNP)';
   static const String educationOrg2Course1Grade = '70%';
   static const String educationOrg2Course1Year = '2014 - 2016';
 
@@ -118,7 +120,8 @@ class DataValues {
 
   static const String educationBanner = 'These Are Some Of My Other';
   static const String educationBannerTitle = 'Online Learning Platforms';
-  static const String educationBannerWeb = 'Click here to find out more about my online learning platforms.';
+  static const String educationBannerWeb =
+      'Click here to find out more about my online learning platforms.';
 
   // Experience
   static const String experienceTitle = 'Experience';
@@ -137,7 +140,8 @@ class DataValues {
       'Managed and maintained Keyos machines for PMC Bank and Vodafone across Goa.';
 
   static const String experienceOrg3Title = 'UTL';
-  static const String experienceOrg3Role = 'Worked as Network Administrator and Sales Representative';
+  static const String experienceOrg3Role =
+      'Worked as Network Administrator and Sales Representative';
   static const String experienceOrg3Years = 'January 2016 - June 2016';
   static const String experienceOrg3Vales = 'Working in Vasco Gwave branch';
 
@@ -154,12 +158,14 @@ class DataValues {
   static const String experienceOrg6Title = 'GoFiber';
   static const String experienceOrg6Role = 'Started my own busines';
   static const String experienceOrg6Years = 'January 2016 - October 2019';
-  static const String experienceOrg6Vales = 'Providing internet services to five villages in my hometown.';
+  static const String experienceOrg6Vales =
+      'Providing internet services to five villages in my hometown.';
 
   static const String experienceOrg7Title = 'Com Cafe';
   static const String experienceOrg7Role = 'Started my own busines';
   static const String experienceOrg7Years = 'March 2014 - May 2017';
-  static const String experienceOrg7Vales = 'Providing cyber cafe facilities in three different locations.';
+  static const String experienceOrg7Vales =
+      'Providing cyber cafe facilities in three different locations.';
 
   static const String experienceBanner = 'Find my working';
   static const String experienceBannerTitle = 'toolkit';

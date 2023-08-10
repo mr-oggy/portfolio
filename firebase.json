@@ -1,0 +1,26 @@
+// {
+//   "hosting": {
+//     "public": "build/web",
+//     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+//     "rewrites": [
+//       {
+//         "source": "**",
+//         "destination": "/index.html"
+//       }
+//     ]
+//   }
+// }
+{
+  "hosting": {
+    "site": "abhishekgupta",
+
+    "public": "public",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

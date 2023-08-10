@@ -2,16 +2,12 @@ import 'package:abhishek_portfolio/desktop/d_header.dart';
 import 'package:abhishek_portfolio/desktop/d_about_me.dart';
 import 'package:abhishek_portfolio/desktop/d_education.dart';
 import 'package:abhishek_portfolio/desktop/d_experience.dart';
-import 'package:abhishek_portfolio/desktop/d_volunteering.dart';
-import 'package:abhishek_portfolio/desktop/d_technotes.dart';
 import 'package:abhishek_portfolio/desktop/d_contact.dart';
 import 'package:abhishek_portfolio/desktop/d_footer.dart';
 import 'package:abhishek_portfolio/mobile/m_header.dart';
 import 'package:abhishek_portfolio/mobile/m_about_me.dart';
 import 'package:abhishek_portfolio/mobile/m_education.dart';
 import 'package:abhishek_portfolio/mobile/m_experience.dart';
-import 'package:abhishek_portfolio/mobile/m_volunteering.dart';
-import 'package:abhishek_portfolio/mobile/m_technotes.dart';
 import 'package:abhishek_portfolio/mobile/m_contact.dart';
 import 'package:abhishek_portfolio/mobile/m_footer.dart';
 import 'package:abhishek_portfolio/theme/app_theme.dart';
@@ -57,7 +53,8 @@ class _HomePageState extends State<HomePage> {
   }
 
   void _scrollToTop() {
-    _scrollController.animateTo(0, duration: const Duration(milliseconds: 1000), curve: Curves.easeInOut);
+    _scrollController.animateTo(0,
+        duration: const Duration(milliseconds: 1000), curve: Curves.easeInOut);
   }
 
   @override

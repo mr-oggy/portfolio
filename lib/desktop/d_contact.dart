@@ -22,17 +22,14 @@ class DS7Contact extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             const FrameTitle(
-                title: DataValues.contactTitle,
-                description: DataValues.contactDescription),
+                title: DataValues.contactTitle, description: DataValues.contactDescription),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 SelectableText(DataValues.contactBanner,
                     style: TextStyle(
-                      fontSize: AppThemeData
-                          .darkTheme.textTheme.titleMedium!.fontSize,
-                      fontWeight: AppThemeData
-                          .darkTheme.textTheme.titleLarge!.fontWeight,
+                      fontSize: AppThemeData.darkTheme.textTheme.titleMedium!.fontSize,
+                      fontWeight: AppThemeData.darkTheme.textTheme.titleLarge!.fontWeight,
                       color: AppThemeData.textWhite,
                     )),
                 const SizedBox(width: 5.0),
@@ -57,10 +54,8 @@ class DS7Contact extends StatelessWidget {
                       child: Text(
                         DataValues.contactEmail,
                         style: TextStyle(
-                          fontSize: AppThemeData
-                              .darkTheme.textTheme.titleMedium!.fontSize,
-                          fontWeight: AppThemeData
-                              .darkTheme.textTheme.titleLarge!.fontWeight,
+                          fontSize: AppThemeData.darkTheme.textTheme.titleMedium!.fontSize,
+                          fontWeight: AppThemeData.darkTheme.textTheme.titleLarge!.fontWeight,
                           color: AppThemeData.textPrimary,
                         ),
                       ),
@@ -76,11 +71,11 @@ class DS7Contact extends StatelessWidget {
             const SizedBox(
               height: 20.0,
             ),
-            ContainerBanner().type2(
-              message:
-                  'Visit test.com to view my all profiles >>',
-              url: DataValues.profilesURL,
-            ),
+            // ContainerBanner().type2(
+            //   message:
+            //       'Visit test.com to view my all profiles >>',
+            //   url: DataValues.profilesURL,
+            // ),
           ],
         ),
       ),

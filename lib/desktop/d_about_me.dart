@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import '../statics/key_holders.dart';
 import '../statics/data_values.dart';
 import '../theme/app_theme.dart';
-import '../widgets/button_text.dart';
 import '../widgets/text_pairs.dart';
 import '../widgets/container_card.dart';
 import '../widgets/container_banner.dart';
@@ -115,35 +114,35 @@ class DS2AboutMe extends StatelessWidget {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Expanded(
-            child: ContainerCard().type1(
-              title: DataValues.aboutMeStudentTitle,
-              description: DataValues.aboutMeStudentDescription,
-              image: 'assets/icons/student.png',
-              message: DataValues.linkedinURL.toString(),
-              url: DataValues.linkedinURL,
-            ),
-          ),
-          SizedBox(width: MediaQuery.of(context).size.width * 0.03),
-          Expanded(
-            child: ContainerCard().type1(
-              title: DataValues.aboutMeDeveloperTitle,
-              description: DataValues.aboutMeDeveloperDescription,
-              image: 'assets/icons/developer.png',
-              message: DataValues.linkedinURL.toString(),
-              url: DataValues.linkedinURL,
-            ),
-          ),
-          SizedBox(width: MediaQuery.of(context).size.width * 0.03),
-          Expanded(
-            child: ContainerCard().type1(
-              title: DataValues.aboutMeVolunteerTitle,
-              description: DataValues.aboutMeVolunteerDescription,
-              image: 'assets/icons/volunteer.png',
-              message: DataValues.linkedinURL.toString(),
-              url: DataValues.linkedinURL,
-            ),
-          ),
+          // Expanded(
+          //   child: ContainerCard().type1(
+          //     title: DataValues.aboutMeStudentTitle,
+          //     description: DataValues.aboutMeStudentDescription,
+          //     image: 'assets/icons/student.png',
+          //     message: DataValues.linkedinURL.toString(),
+          //     url: DataValues.linkedinURL,
+          //   ),
+          // ),
+          // SizedBox(width: MediaQuery.of(context).size.width * 0.03),
+          // Expanded(
+          //   child: ContainerCard().type1(
+          //     title: DataValues.aboutMeDeveloperTitle,
+          //     description: DataValues.aboutMeDeveloperDescription,
+          //     image: 'assets/icons/developer.png',
+          //     message: DataValues.linkedinURL.toString(),
+          //     url: DataValues.linkedinURL,
+          //   ),
+          // ),
+          // SizedBox(width: MediaQuery.of(context).size.width * 0.03),
+          // Expanded(
+          //   child: ContainerCard().type1(
+          //     title: DataValues.aboutMeVolunteerTitle,
+          //     description: DataValues.aboutMeVolunteerDescription,
+          //     image: 'assets/icons/volunteer.png',
+          //     message: DataValues.linkedinURL.toString(),
+          //     url: DataValues.linkedinURL,
+          //   ),
+          // ),
         ],
       ),
     );
@@ -159,22 +158,23 @@ class DS2AboutMe extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const FrameTitle(title: DataValues.aboutMeTitle, description: DataValues.aboutMeDescription),
+            const FrameTitle(
+                title: DataValues.aboutMeTitle, description: DataValues.aboutMeDescription),
             const SizedBox(height: 40.0),
             bio(context),
             const SizedBox(height: 40.0),
             titles(context),
             const SizedBox(height: 80.0),
-            Center(
-              child: ContainerBanner().type1(
-                  isDesktop: true,
-                  title1: DataValues.aboutMeBanner,
-                  title2: DataValues.aboutMeBannerTitle,
-                  description: DataValues.aboutMeBannerWeb,
-                  image: 'logo',
-                  message: 'View Profiles',
-                  url: DataValues.profilesURL),
-            ),
+            // Center(
+            //   child: ContainerBanner().type1(
+            //       isDesktop: true,
+            //       title1: DataValues.aboutMeBanner,
+            //       title2: DataValues.aboutMeBannerTitle,
+            //       description: DataValues.aboutMeBannerWeb,
+            //       image: 'logo',
+            //       message: 'View Profiles',
+            //       url: DataValues.profilesURL),
+            // ),
           ],
         ),
       ),

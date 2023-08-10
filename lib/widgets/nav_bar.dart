@@ -37,24 +37,24 @@ class NavBar {
           ),
           message: 'Go to ${DataValues.navBarExperience} section',
         ),
-        const SizedBox(width: 20.0),
-        ButtonTextLarge(
-          text: DataValues.navBarVolunteering,
-          onPressed: () => Scrollable.ensureVisible(
-            KeyHolders.volunteeringKey.currentContext!,
-            duration: const Duration(milliseconds: 1000),
-          ),
-          message: 'Go to ${DataValues.navBarVolunteering} section',
-        ),
-        const SizedBox(width: 20.0),
-        ButtonTextLarge(
-          text: DataValues.navBarTechNotes,
-          onPressed: () => Scrollable.ensureVisible(
-            KeyHolders.technotesKey.currentContext!,
-            duration: const Duration(milliseconds: 1000),
-          ),
-          message: 'Go to ${DataValues.navBarTechNotes} section',
-        ),
+        // const SizedBox(width: 20.0),
+        // ButtonTextLarge(
+        //   text: DataValues.navBarVolunteering,
+        //   onPressed: () => Scrollable.ensureVisible(
+        //     KeyHolders.volunteeringKey.currentContext!,
+        //     duration: const Duration(milliseconds: 1000),
+        //   ),
+        //   message: 'Go to ${DataValues.navBarVolunteering} section',
+        // ),
+        // const SizedBox(width: 20.0),
+        // ButtonTextLarge(
+        //   text: DataValues.navBarTechNotes,
+        //   onPressed: () => Scrollable.ensureVisible(
+        //     KeyHolders.technotesKey.currentContext!,
+        //     duration: const Duration(milliseconds: 1000),
+        //   ),
+        //   message: 'Go to ${DataValues.navBarTechNotes} section',
+        // ),
         const SizedBox(width: 20.0),
         ButtonRectangle(
             name: DataValues.navBarContactMe,
