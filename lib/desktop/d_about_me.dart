@@ -14,12 +14,12 @@ class MembersData {
   final String profile;
 }
 
-Map<String, MembersData> members = {
-  'abhishek': MembersData('Abhishek Gupta', 'assets/members/abhi.png'),
-  'shaubham': MembersData('Shubham Gupta', 'assets/members/shub.png'),
-  'nikshit': MembersData('Nikshit Chauhan', 'assets/members/nik.png'),
-  'dishant': MembersData('Dishant Sharma', 'assets/members/dish.png'),
-};
+List<MembersData> members = [
+  MembersData('Abhishek Gupta', 'abhi'),
+  MembersData('Shubham Gupta', 'shub'),
+  MembersData('Nikshit Chauhan', 'nik'),
+  MembersData('Dishant Sharma', 'dish'),
+];
 
 class DS2AboutMe extends StatelessWidget {
   const DS2AboutMe({Key? key}) : super(key: key);
