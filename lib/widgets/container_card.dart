@@ -323,21 +323,23 @@ class ContainerCard {
     // required Uri url,
   }) {
     return Container(
-      decoration: BoxDecoration(
-        color: AppThemeData.cardGrey,
-        borderRadius: BorderRadius.circular(10.0),
-        boxShadow: [
-          BoxShadow(
-            color: Colors.black.withOpacity(0.2),
-            spreadRadius: 2,
-            blurRadius: 5,
-            offset: const Offset(0, 3), // changes position of shadow
-          ),
-        ],
-      ),
+      height: 50,
+
+      // decoration: BoxDecoration(
+      //   color: AppThemeData.cardGrey,
+      //   borderRadius: BorderRadius.circular(10.0),
+      //   boxShadow: [
+      //     BoxShadow(
+      //       color: Colors.black.withOpacity(0.2),
+      //       spreadRadius: 2,
+      //       blurRadius: 5,
+      //       offset: const Offset(0, 3), // changes position of shadow
+      //     ),
+      //   ],
+      // ),
       child: Padding(
         padding: const EdgeInsets.all(30.0),
-        child: Center(child: Image.asset('assets/members/$image.png', height: 40.0)),
+        child: Center(child: Image.asset('assets/widgets$image.png', height: 50.0)),
       ),
     );
   }

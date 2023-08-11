@@ -30,6 +30,19 @@ flutter:
     - assets/images/
     - assets/members/
     - assets/widgets/
+    - assets/widgets/backend/dark/
+    - assets/widgets/blog/dark/
+    - assets/widgets/business/dark/
+    - assets/widgets/code/dark/
+    - assets/widgets/credential/dark/
+    - assets/widgets/default/
+    - assets/widgets/designing/dark/
+    - assets/widgets/developer/dark/
+    - assets/widgets/devops/dark/
+    - assets/widgets/frontend/dark/
+    - assets/widgets/social/dark/
+    - assets/widgets/webgen/dark/
+
   fonts:
     - family: Poppins
       fonts:
