@@ -18,7 +18,11 @@ class TextPairs {
     );
   }
 
-  Widget type2({required String title, required String value1, required String value2, required bool isThreeLines}) {
+  Widget type2(
+      {required String title,
+      required String value1,
+      required String value2,
+      required bool isThreeLines}) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [

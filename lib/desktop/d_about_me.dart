@@ -8,6 +8,19 @@ import '../widgets/container_card.dart';
 import '../widgets/container_banner.dart';
 import '../widgets/frame_title.dart';
 
+class MembersData {
+  MembersData(this.name, this.profile);
+  final String name;
+  final String profile;
+}
+
+Map<String, MembersData> members = {
+  'abhishek': MembersData('Abhishek Gupta', ''),
+  'shaubham': MembersData('Shubham Gupta', 'assets/members/shub.png'),
+  'nikshit': MembersData('Nikshit Chauhan', 'assets/members/nik.png'),
+  'dishant': MembersData('Dishant Sharma', 'assets/members/dish.png'),
+};
+
 class DS2AboutMe extends StatelessWidget {
   const DS2AboutMe({Key? key}) : super(key: key);
 
@@ -17,7 +30,8 @@ class DS2AboutMe extends StatelessWidget {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Expanded(
+          Container(
+            width: MediaQuery.sizeOf(context).width / 3,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -35,71 +49,72 @@ class DS2AboutMe extends StatelessWidget {
             ),
           ),
           SizedBox(width: MediaQuery.of(context).size.width * 0.08),
+          // Expanded(
+          //   child: Column(
+          //     crossAxisAlignment: CrossAxisAlignment.start,
+          //     children: [
+          //       TextPairs().type1(
+          //         title: DataValues.aboutMeFullNameTitle,
+          //         description: '',
+          //       ),
+          //       // const SizedBox(height: 30.0),
+          //     ],
+          //   ),
+          // ),
+          // SizedBox(width: MediaQuery.of(context).size.width * 0.08),
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 TextPairs().type1(
                   title: DataValues.aboutMeFullNameTitle,
-                  description: DataValues.aboutMeFullNameDescription,
+                  description: '',
                 ),
                 const SizedBox(height: 30.0),
+                SizedBox(
+                  height: 1000,
+                  // width: MediaQuery.sizeOf(context).width / 2,
+                  child: GridView.builder(
+                    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 3, // Number of columns
+                      mainAxisSpacing: 10.0, // Spacing between rows
+                      crossAxisSpacing: 10.0, // Spacing between columns
+                    ),
+                    itemCount: 10, // Number of items in the grid
+                    itemBuilder: (BuildContext context, int index) {
+                      return GridTile(
+                        child: Container(
+                          color: Colors.blueAccent,
+                          child: Center(
+                            child: Text(
+                              'Item $index',
+                              style: AppThemeData.darkTheme.textTheme.titleMedium,
+                            ),
+                          ),
+                        ),
+                      );
+                    },
+                  ),
+                ),
                 // TextPairs().type1(
-                //   title: DataValues.aboutMeNwITitle,
-                //   description: DataValues.aboutMeNwIDescription,
+                //   title: DataValues.aboutMeLocationTitle,
+                //   description: DataValues.aboutMeLocationDescription,
+                // ),
+                // const SizedBox(height: 30.0),
+                // // TextPairs().type1(
+                // //   title: DataValues.aboutMeWorkDomainTitle,
+                // //   description: DataValues.aboutMeWorkDomainDescription,
+                // // ),
+                // // const SizedBox(height: 30.0),
+                // TextPairs().type1(
+                //   title: DataValues.aboutMeHobbiesTitle,
+                //   description: DataValues.aboutMeHobbiesDescription,
                 // ),
                 // const SizedBox(height: 30.0),
                 // TextPairs().type1(
-                //   title: DataValues.aboutMeFnLTitle,
-                //   description: DataValues.aboutMeFnLDescription,
+                //   title: DataValues.aboutMeGoalTitle,
+                //   description: DataValues.aboutMeGoalDescription,
                 // ),
-                // const SizedBox(height: 30.0),
-                TextPairs().type1(
-                  title: DataValues.aboutMeGenderTitle,
-                  description: DataValues.aboutMeGenderDescription,
-                ),
-                const SizedBox(height: 30.0),
-                TextPairs().type1(
-                  title: DataValues.aboutMeDobTitle,
-                  description: DataValues.aboutMeDobDescription,
-                ),
-                const SizedBox(height: 30.0),
-                TextPairs().type1(
-                  title: DataValues.aboutMeLanguageTitle,
-                  description: DataValues.aboutMeLanguageDescription,
-                ),
-              ],
-            ),
-          ),
-          SizedBox(width: MediaQuery.of(context).size.width * 0.08),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                TextPairs().type1(
-                  title: DataValues.aboutMeNationalityTitle,
-                  description: DataValues.aboutMeNationalityDescription,
-                ),
-                const SizedBox(height: 30.0),
-                TextPairs().type1(
-                  title: DataValues.aboutMeLocationTitle,
-                  description: DataValues.aboutMeLocationDescription,
-                ),
-                const SizedBox(height: 30.0),
-                // TextPairs().type1(
-                //   title: DataValues.aboutMeWorkDomainTitle,
-                //   description: DataValues.aboutMeWorkDomainDescription,
-                // ),
-                // const SizedBox(height: 30.0),
-                TextPairs().type1(
-                  title: DataValues.aboutMeHobbiesTitle,
-                  description: DataValues.aboutMeHobbiesDescription,
-                ),
-                const SizedBox(height: 30.0),
-                TextPairs().type1(
-                  title: DataValues.aboutMeGoalTitle,
-                  description: DataValues.aboutMeGoalDescription,
-                ),
               ],
             ),
           ),
