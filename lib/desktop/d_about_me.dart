@@ -15,7 +15,7 @@ class MembersData {
 }
 
 Map<String, MembersData> members = {
-  'abhishek': MembersData('Abhishek Gupta', ''),
+  'abhishek': MembersData('Abhishek Gupta', 'assets/members/abhi.png'),
   'shaubham': MembersData('Shubham Gupta', 'assets/members/shub.png'),
   'nikshit': MembersData('Nikshit Chauhan', 'assets/members/nik.png'),
   'dishant': MembersData('Dishant Sharma', 'assets/members/dish.png'),
