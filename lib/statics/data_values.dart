@@ -29,13 +29,13 @@ class DataValues {
   static Uri lateNightStudentURL = Uri.parse('');
 
   // Header
-  static const String headerGreetings = 'Hello, World! I\'m';
-  static const String headerName = 'Abhishek Gupta';
+  static const String headerGreetings = 'Hello, World! we are';
+  static const String headerName = 'TriPixel Labs';
   static const String headerTitle =
-      'Experienced Flutter Developer | Cross-Platform App Expert | Flutter Framework | State Management (BLoC, GetX)';
+      'Flutter | Flutter Web | Flutter Desktop | Flutter macOS | Flutter Windows | Flutter Linux | React | Node.js | MongoDB | Firebase | AWS | Docker | Kubernetes | CI/CD | DevOps | Agile | Scrum | TDD | BDD | DDD | Clean Architecture | SOLID | Design Patterns | Microservices | RESTful APIs | GraphQL ';
 
   // Navigation Bar
-  static const String navBarAboutMe = 'About Me';
+  static const String navBarAboutMe = 'About us';
   static const String navBarEducation = 'Education';
   static const String navBarExperience = 'Experience';
   static const String navBarVolunteering = 'Volunteering';
@@ -45,11 +45,13 @@ class DataValues {
   // About me
   static const String aboutMeTitle = 'About Me';
   static const String aboutMeDescription =
-      'This website includes my public details, which anyone can find on the internet. So if you are looking for my personal information, such as my bio, education, experience, and other things that may make you wonder, feel free to scroll up and down to find out about me.';
+      'This website includes our public details, which anyone can find on the internet. So if you are looking for my personal information, such as my bio, projects, experience, and other things that may make you wonder, feel free to scroll up and down to find out about us.';
   static const String aboutMeBiographyTitle = 'Biography';
-  static const String aboutMeBiographyDescription = 'Hi there!'
-      'Experienced Flutter Developer with 3+ years of creating cross-platform mobile, web and macOS applications. Proficient in Flutter framework, delivering efficient and scalable user experiences. Skilled in state management (BLoC, GetX), ensuring optimal performance. Deployed apps on Android, iOS, macOS, and web.'
-      'In addition to my studies, I\'m also passionate about giving back to various communities and helping others, which is why I volunteer my time to help out whenever I can, and I believe that this work is vital in helping to create a better future for everyone.';
+  static const String aboutMeBiographyDescription = '''
+Tripixel Labs: Driving Business Growth Through Innovation
+
+Tripixel Labs is a leading software company revolutionizing businesses with advanced tech solutions. Founded by [Founder Names] in [year], it bridges technology and business, offering bespoke services like software development, data analytics, and cloud computing. The team's diverse expertise enables tailor-made solutions that fuel growth and enhance user experience. Committed to client success, Tripixel Labs collaborates transparently to exceed expectations. By driving operational efficiency and community engagement, it's a beacon of innovation. With an eye on the future, Tripixel Labs continually embraces emerging technologies, ensuring it remains a trailblazer in business transformation.
+''';
   static const String aboutMeFullNameTitle = 'Full Name';
   static const String aboutMeFullNameDescription = 'Abhishek Gupta';
   static const String aboutMeNwITitle = 'Name with Initials';
