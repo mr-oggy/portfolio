@@ -45,20 +45,20 @@ class DS8Footer extends StatelessWidget {
           const SizedBox(
             height: 10,
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              SelectableText(
-                DataValues.builtWith,
-                style: Theme.of(context).textTheme.bodyMedium,
-              ),
-              const SizedBox(
-                width: 5,
-              ),
-              getSourceCode(context),
-            ],
-          ),
+          // Row(
+          //   mainAxisAlignment: MainAxisAlignment.center,
+          //   crossAxisAlignment: CrossAxisAlignment.center,
+          //   children: [
+          //     SelectableText(
+          //       DataValues.builtWith,
+          //       style: Theme.of(context).textTheme.bodyMedium,
+          //     ),
+          //     const SizedBox(
+          //       width: 5,
+          //     ),
+          //     getSourceCode(context),
+          //   ],
+          // ),
           const SizedBox(
             height: 10,
           ),

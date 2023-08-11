@@ -9,16 +9,34 @@ import '../widgets/container_banner.dart';
 import '../widgets/frame_title.dart';
 
 class MembersData {
-  MembersData(this.name, this.profile);
+  MembersData(this.name, this.profile, this.values);
   final String name;
   final String profile;
+  final List<String> values;
 }
 
 List<MembersData> members = [
-  MembersData('Abhishek Gupta', 'abhi'),
-  MembersData('Shubham Gupta', 'shub'),
-  MembersData('Nikshit Chauhan', 'nik'),
-  MembersData('Dishant Sharma', 'dish'),
+  MembersData('Abhishek Gupta', 'abhi', [
+    'Technology\'s',
+    'Flutter | Flutter Web | Flutter Desktop | Flutter macOS | Flutter Windows | Flutter Linux | Node.js | MongoDB | Firebase | AWS | Docker | CI/CD | DevOps | Agile | Scrum Design Patterns | Microservices | RESTful APIs ',
+    '',
+    ''
+  ]),
+  MembersData('Nikshit Chauhan', 'nik', [
+    'Technology\'s',
+    'Flutter | Flutter Web | Flutter Desktop | Flutter macOS | Flutter Windows | Flutter Linux |Firebase | AWS | CI/CD | DevOps | Agile',
+    ''
+  ]),
+  MembersData('Shubham Gupta', 'shub', [
+    'Technology\'s',
+    'Flutter | Flutter Web | Flutter Desktop | Flutter macOS | Flutter Windows | Flutter Linux | Node.js | MongoDB | Firebase | AWS | Docker | CI/CD | DevOps | Agile | Scrum Design Patterns | Microservices | RESTful APIs | Kubernetes | TDD | BDD | DDD | Python | GO',
+    ''
+  ]),
+  MembersData('Dishant Sharma', 'dish', [
+    'Technology\'s',
+    'React | Node.js | MongoDB | Firebase | AWS | Docker | Next.js | HTML | CSS | JS',
+    ''
+  ]),
 ];
 
 class DS2AboutMe extends StatelessWidget {
@@ -76,23 +94,18 @@ class DS2AboutMe extends StatelessWidget {
                   // width: MediaQuery.sizeOf(context).width / 2,
                   child: GridView.builder(
                     gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 3, // Number of columns
-                      mainAxisSpacing: 10.0, // Spacing between rows
-                      crossAxisSpacing: 10.0, // Spacing between columns
+                      crossAxisCount: 2, // Number of columns
+                      mainAxisSpacing: 50.0, // Spacing between rows
+                      crossAxisSpacing: 20.0, // Spacing between columns
                     ),
-                    itemCount: 10, // Number of items in the grid
+                    itemCount: 4, // Number of items in the grid
                     itemBuilder: (BuildContext context, int index) {
                       return GridTile(
-                        child: Container(
-                          color: Colors.blueAccent,
-                          child: Center(
-                            child: Text(
-                              'Item $index',
-                              style: AppThemeData.darkTheme.textTheme.titleMedium,
-                            ),
-                          ),
-                        ),
-                      );
+                          child: ContainerCard().type5(
+                              image: members[index].profile,
+                              message: '',
+                              title: members[index].name,
+                              values: members[index].values));
                     },
                   ),
                 ),

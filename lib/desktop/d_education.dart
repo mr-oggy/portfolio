@@ -19,73 +19,26 @@ class DS3Education extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const FrameTitle(title: DataValues.educationTitle, description: DataValues.educationDescription),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Expanded(
-                  child: ContainerCard().type2(
-                    image: 'goa_university',
-                    title: DataValues.educationOrg1Title,
-                    values: [
-                      DataValues.educationOrg1Course1Name,
-                      DataValues.educationOrg1Course1Grade,
-                      DataValues.educationOrg1Course1Year,
-                    ],
-                    message: DataValues.linkedinURL.toString(),
-                    url: DataValues.linkedinURL,
-                  ),
+            const FrameTitle(
+                title: DataValues.educationTitle, description: DataValues.educationDescription),
+            SizedBox(
+              height: 1000,
+              // width: MediaQuery.sizeOf(context).width / 2,
+              child: GridView.builder(
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 20, // Number of columns
+                  mainAxisSpacing: 50.0, // Spacing between rows
+                  crossAxisSpacing: 20.0, // Spacing between columns
                 ),
-                SizedBox(width: MediaQuery.of(context).size.width * 0.05),
-                Expanded(
-                  child: ContainerCard().type2(
-                    image: 'jetking',
-                    title: DataValues.educationOrg2Title,
-                    values: [
-                      DataValues.educationOrg2Course1Name,
-                      DataValues.educationOrg2Course1Grade,
-                      DataValues.educationOrg2Course1Year,
-                    ],
-                    message: DataValues.linkedinURL.toString(),
-                    url: DataValues.linkedinURL,
-                  ),
-                ),
-              ],
-            ),
-            const SizedBox(height: 40.0),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Expanded(
-                  child: ContainerCard().type2(
-                    image: 'mes',
-                    title: DataValues.educationOrg3Title,
-                    values: [
-                      DataValues.educationOrg3Course1Name,
-                      DataValues.educationOrg3Course1Grade,
-                      DataValues.educationOrg3Course1Year,
-                    ],
-                    message: DataValues.linkedinURL.toString(),
-                    url: DataValues.linkedinURL,
-                  ),
-                ),
-                SizedBox(width: MediaQuery.of(context).size.width * 0.05),
-                Expanded(
-                  child: ContainerCard().type2(
-                    image: 'kshs',
-                    title: DataValues.educationOrg4Title,
-                    values: [
-                      DataValues.educationOrg4Course1Name,
-                      DataValues.educationOrg4Course1Grade,
-                      DataValues.educationOrg4Course1Year,
-                    ],
-                    message: DataValues.linkedinURL.toString(),
-                    url: DataValues.linkedinURL,
-                  ),
-                ),
-              ],
+                itemCount: 100, // Number of items in the grid
+                itemBuilder: (BuildContext context, int index) {
+                  return GridTile(
+                    child: ContainerCard().type6(
+                      image: 'members[index].profie',
+                    ),
+                  );
+                },
+              ),
             ),
           ],
         ),
