@@ -45,11 +45,12 @@ class DS2AboutMe extends StatelessWidget {
   Widget bio(BuildContext context) {
     return SizedBox(
       //color: Colors.blue,
-      child: Row(
+      height: 1810,
+      child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
-            width: MediaQuery.sizeOf(context).width / 3,
+            // width: MediaQuery.sizeOf(context).width / 2,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -66,7 +67,7 @@ class DS2AboutMe extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(width: MediaQuery.of(context).size.width * 0.08),
+          SizedBox(height: MediaQuery.of(context).size.width * 0.08),
           // Expanded(
           //   child: Column(
           //     crossAxisAlignment: CrossAxisAlignment.start,
@@ -89,24 +90,26 @@ class DS2AboutMe extends StatelessWidget {
                   description: '',
                 ),
                 const SizedBox(height: 30.0),
-                SizedBox(
-                  height: 1000,
-                  // width: MediaQuery.sizeOf(context).width / 2,
-                  child: GridView.builder(
-                    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 2, // Number of columns
-                      mainAxisSpacing: 50.0, // Spacing between rows
-                      crossAxisSpacing: 20.0, // Spacing between columns
+                Center(
+                  child: SizedBox(
+                    height: 1000,
+                    width: MediaQuery.sizeOf(context).width / 1.5,
+                    child: GridView.builder(
+                      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                        crossAxisCount: 2, // Number of columns
+                        mainAxisSpacing: 20.0, // Spacing between rows
+                        crossAxisSpacing: 20.0, // Spacing between columns
+                      ),
+                      itemCount: 4, // Number of items in the grid
+                      itemBuilder: (BuildContext context, int index) {
+                        return SizedBox(
+                            child: ContainerCard().type5(
+                                image: members[index].profile,
+                                message: '',
+                                title: members[index].name,
+                                values: members[index].values));
+                      },
                     ),
-                    itemCount: 4, // Number of items in the grid
-                    itemBuilder: (BuildContext context, int index) {
-                      return GridTile(
-                          child: ContainerCard().type5(
-                              image: members[index].profile,
-                              message: '',
-                              title: members[index].name,
-                              values: members[index].values));
-                    },
                   ),
                 ),
                 // TextPairs().type1(

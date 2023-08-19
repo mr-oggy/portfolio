@@ -1,3 +1,4 @@
+import 'package:abhishek_portfolio/desktop/d_about_me.dart';
 import 'package:flutter/material.dart';
 
 import '../statics/key_holders.dart';
@@ -31,57 +32,25 @@ class MS2AboutMe extends StatelessWidget {
           const SizedBox(height: 30.0),
           TextPairs().type1(
             title: DataValues.aboutMeFullNameTitle,
-            description: DataValues.aboutMeFullNameDescription,
+            description: '',
           ),
-          const SizedBox(height: 30.0),
-          TextPairs().type1(
-            title: DataValues.aboutMeNwITitle,
-            description: DataValues.aboutMeNwIDescription,
-          ),
-          const SizedBox(height: 30.0),
-          TextPairs().type1(
-            title: DataValues.aboutMeFnLTitle,
-            description: DataValues.aboutMeFnLDescription,
-          ),
-          const SizedBox(height: 30.0),
-          TextPairs().type1(
-            title: DataValues.aboutMeGenderTitle,
-            description: DataValues.aboutMeGenderDescription,
-          ),
-          const SizedBox(height: 30.0),
-          TextPairs().type1(
-            title: DataValues.aboutMeDobTitle,
-            description: DataValues.aboutMeDobDescription,
-          ),
-          const SizedBox(height: 30.0),
-          TextPairs().type1(
-            title: DataValues.aboutMeLanguageTitle,
-            description: DataValues.aboutMeLanguageDescription,
-          ),
-          const SizedBox(height: 30.0),
-          TextPairs().type1(
-            title: DataValues.aboutMeNationalityTitle,
-            description: DataValues.aboutMeNationalityDescription,
-          ),
-          const SizedBox(height: 30.0),
-          TextPairs().type1(
-            title: DataValues.aboutMeLocationTitle,
-            description: DataValues.aboutMeLocationDescription,
-          ),
-          const SizedBox(height: 30.0),
-          TextPairs().type1(
-            title: DataValues.aboutMeWorkDomainTitle,
-            description: DataValues.aboutMeWorkDomainDescription,
-          ),
-          const SizedBox(height: 30.0),
-          TextPairs().type1(
-            title: DataValues.aboutMeHobbiesTitle,
-            description: DataValues.aboutMeHobbiesDescription,
-          ),
-          const SizedBox(height: 30.0),
-          TextPairs().type1(
-            title: DataValues.aboutMeGoalTitle,
-            description: DataValues.aboutMeGoalDescription,
+          SizedBox(
+            height: 1800,
+            child: ListView.builder(
+              itemCount: 4,
+              itemBuilder: ((context, index) {
+                return Padding(
+                  // height: 250,
+                  padding: const EdgeInsets.only(bottom: 20),
+                  child: ContainerCard().type5(
+                    image: members[index].profile,
+                    message: '',
+                    title: members[index].name,
+                    values: members[index].values,
+                  ),
+                );
+              }),
+            ),
           ),
         ],
       ),
@@ -137,8 +106,8 @@ class MS2AboutMe extends StatelessWidget {
             const SizedBox(height: 40.0),
             bio(context),
             const SizedBox(height: 40.0),
-            titles(context),
-            const SizedBox(height: 80.0),
+            // titles(context),
+            // const SizedBox(height: 80.0),
             // Center(
             //   child: ContainerBanner().type1(
             //       isDesktop: true,

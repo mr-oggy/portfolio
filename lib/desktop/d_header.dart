@@ -10,7 +10,7 @@ class DS1Header extends StatelessWidget {
 
   List<Widget> headerData() {
     return [
-      Image.network('assets/images/logo.png', height: 250.0, width: 250.0),
+      Image.asset('assets/images/logo.png', height: 250.0, width: 250.0),
       const SizedBox(width: 60.0),
       Column(
         children: [

@@ -268,10 +268,10 @@ class ContainerCard {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 if (image != 'shub')
-                  Center(child: Image.asset('assets/members/$image.png', height: 189.0)),
+                  Center(child: Image.asset('assets/members/$image.png', height: 160.0)),
                 if (image == 'shub')
                   const SizedBox(
-                    height: 189,
+                    height: 160,
                   ),
                 const SizedBox(height: 20.0),
                 Center(
