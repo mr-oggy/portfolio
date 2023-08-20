@@ -39,12 +39,13 @@ class DS8Footer extends StatelessWidget {
             height: 40,
           ),
           SelectableText(
-            '${DataValues.appName} (v${DataValues.appVersion})',
+            'The icons on this website belong to their respective companies and are their trademarks and property. These icons are used for visual representation only and do not imply any endorsement or affiliation.',
             style: Theme.of(context).textTheme.bodyMedium,
+            textAlign: TextAlign.center,
           ),
-          const SizedBox(
-            height: 10,
-          ),
+          // const SizedBox(
+          //   height: 10,
+          // ),
           // Row(
           //   mainAxisAlignment: MainAxisAlignment.center,
           //   crossAxisAlignment: CrossAxisAlignment.center,
