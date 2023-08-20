@@ -319,24 +319,33 @@ class ContainerCard {
 
   Widget type6({
     required String image,
-
-    // required Uri url,
+    Uri? url,
+    required name,
   }) {
+    return MouseRegion(
+      cursor: SystemMouseCursors.click,
+      child: GestureDetector(
+        onTap: () async {
+          if (url != null) {
+            if (!await launchUrl(url)) {
+              throw 'Could not launch $url';
+            }
+            log("Direct to: $url");
+          }
+        },
+        child: Column(
+          children: [
+            Tooltip(
+              message: url?.toString() ?? '',
+              child: Image.asset('assets/widgets/$image.png', height: 50, width: 50),
+            ),
+            Text(name),
+          ],
+        ),
+      ),
+    );
     return Container(
       height: 50,
-
-      // decoration: BoxDecoration(
-      //   color: AppThemeData.cardGrey,
-      //   borderRadius: BorderRadius.circular(10.0),
-      //   boxShadow: [
-      //     BoxShadow(
-      //       color: Colors.black.withOpacity(0.2),
-      //       spreadRadius: 2,
-      //       blurRadius: 5,
-      //       offset: const Offset(0, 3), // changes position of shadow
-      //     ),
-      //   ],
-      // ),
       child: Padding(
         padding: const EdgeInsets.all(30.0),
         child: Center(child: Image.asset('assets/widgets$image.png', height: 50.0)),
