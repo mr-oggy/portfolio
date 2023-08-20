@@ -40,7 +40,7 @@ class DS8Footer extends StatelessWidget {
           ),
           SelectableText(
             'The icons on this website belong to their respective companies and are their trademarks and property. These icons are used for visual representation only and do not imply any endorsement or affiliation.',
-            style: Theme.of(context).textTheme.bodyMedium,
+            style: Theme.of(context).textTheme.bodySmall,
             textAlign: TextAlign.center,
           ),
           // const SizedBox(

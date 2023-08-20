@@ -37,6 +37,7 @@ class MS2AboutMe extends StatelessWidget {
           SizedBox(
             height: 1800,
             child: ListView.builder(
+              physics: const NeverScrollableScrollPhysics(),
               itemCount: 4,
               itemBuilder: ((context, index) {
                 return Padding(
