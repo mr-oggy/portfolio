@@ -14,7 +14,7 @@ class DataValues {
   static Uri hashnodeURL = Uri.parse('https://hashnode.com/@ga8244');
   static Uri githubURL = Uri.parse('https://github.com/mr-oggy');
   static Uri gitlabURL = Uri.parse('https://gitlab.com/mrOggy');
-  static Uri linkedinURL = Uri.parse('https://www.linkedin.com/in/abhishek-gupta-b133b5103/');
+  static Uri linkedinURL = Uri.parse('');
   static Uri twitterURL = Uri.parse('https://twitter.com/ga8244');
   static Uri youtubeURL = Uri.parse('');
   static Uri telegramURL = Uri.parse('https://t.me/ga8244');
@@ -50,7 +50,7 @@ class DataValues {
   static const String aboutMeBiographyDescription = '''
 Tripixel Labs: Driving Business Growth Through Innovation
 
-At the vanguard of technological transformation, Tripixel Labs has emerged as a trailblazing software company that is revolutionizing the business landscape through its innovative solutions. Founded by visionary minds [Founder Names] in [year], the company serves as a dynamic bridge between the realms of technology and business, offering a spectrum of bespoke services including avant-garde software development, sophisticated data analytics, and seamless cloud computing integration. This holistic approach not only distinguishes Tripixel Labs from its peers but also propels businesses toward unprecedented growth trajectories, enhancing both operational efficiencies and user experiences.
+At the vanguard of technological transformation, Tripixel Labs has emerged as a trailblazing software company that is revolutionizing the business landscape through its innovative solutions. Founded by visionary minds Abhishek, Nikshit and Shubham in 2023, the company serves as a dynamic bridge between the realms of technology and business, offering a spectrum of bespoke services including avant-garde software development, sophisticated data analytics, and seamless cloud computing integration. This holistic approach not only distinguishes Tripixel Labs from its peers but also propels businesses toward unprecedented growth trajectories, enhancing both operational efficiencies and user experiences.
 
 What sets Tripixel Labs apart is its remarkable ability to harness the collective expertise of its diverse team. This multifaceted group of professionals collaborates harmoniously to craft tailor-made solutions that cater to the unique needs and aspirations of each client. This personalized approach ensures that the solutions provided are not just technically sound but also aligned with the overarching business objectives, resulting in a symbiotic relationship between technology and enterprise.
 
