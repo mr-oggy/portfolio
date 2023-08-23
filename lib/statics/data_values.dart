@@ -10,13 +10,12 @@ class DataValues {
   static const String appBuildNumber = '1';
 
   // External links
-  static Uri devURL = Uri.parse('');
+  static Uri devURL = Uri.parse('https://github.com/mr-oggy?tab=repositories');
   static Uri hashnodeURL = Uri.parse('https://hashnode.com/@ga8244');
   static Uri githubURL = Uri.parse('https://github.com/mr-oggy');
   static Uri gitlabURL = Uri.parse('https://gitlab.com/mrOggy');
   static Uri linkedinURL = Uri.parse('https://www.linkedin.com/in/abhishek-gupta-b133b5103/');
   static Uri twitterURL = Uri.parse('https://twitter.com/ga8244');
-  static Uri youtubeURL = Uri.parse('');
   static Uri telegramURL = Uri.parse('https://t.me/ga8244');
   static Uri facebookURL = Uri.parse('https://www.facebook.com/abhishekkumar.gupta.733');
   static Uri instagramURL = Uri.parse('https://www.instagram.com/abhishekkumargupta_11/');

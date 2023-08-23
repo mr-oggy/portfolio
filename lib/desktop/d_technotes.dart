@@ -33,7 +33,7 @@ class DS6TechNotes extends StatelessWidget {
                     role: DataValues.technotesOrg1Role,
                     years: DataValues.technotesOrg1Years,
                     values: DataValues.technotesOrg1Vales,
-                    message: DataValues.lateNightStudentURL.toString(),
+                    message: 'DataValues.lateNightStudentURL.toString()',
                     url: DataValues.lateNightStudentURL,
                     isButtonEnabled: true,
                   ),
