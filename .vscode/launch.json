@@ -1,24 +1,63 @@
+// {
+//     // Use IntelliSense to learn about possible attributes.
+//     // Hover to view descriptions of existing attributes.
+//     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+//     "version": "0.2.0",
+//     "configurations": [
+//         {
+//             "name": "abhishek_portfolio",
+//             "request": "launch",
+//             "type": "dart"
+//         },
+//         {
+//             "name": "abhishek_portfolio (profile mode)",
+//             "request": "launch",
+//             "type": "dart",
+//             "flutterMode": "profile"
+//         },
+//         {
+//             "name": "abhishek_portfolio (release mode)",
+//             "request": "launch",
+//             "type": "dart",
+//             "flutterMode": "release"
+//         }
+//     ]
+// }
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
             "name": "abhishek_portfolio",
             "request": "launch",
-            "type": "dart"
+            "type": "dart",
+            "program": "lib/main.dart", // Specify the entry point of your Flutter web app
+            "args": [
+                "-d chrome",
+                "--web-port",
+                "8080"
+                // You can specify the desired port for the web server
+            ]
         },
         {
             "name": "abhishek_portfolio (profile mode)",
             "request": "launch",
             "type": "dart",
+            "program": "lib/main.dart",
+            "args": [
+                "--web-port",
+                "8080"
+            ],
             "flutterMode": "profile"
         },
         {
             "name": "abhishek_portfolio (release mode)",
             "request": "launch",
             "type": "dart",
+            "program": "lib/main.dart",
+            "args": [
+                "--web-port",
+                "8080"
+            ],
             "flutterMode": "release"
         }
     ]

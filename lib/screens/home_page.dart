@@ -4,6 +4,7 @@ import 'package:abhishek_portfolio/desktop/d_education.dart';
 import 'package:abhishek_portfolio/desktop/d_experience.dart';
 import 'package:abhishek_portfolio/desktop/d_contact.dart';
 import 'package:abhishek_portfolio/desktop/d_footer.dart';
+import 'package:abhishek_portfolio/desktop/d_volunteering.dart';
 import 'package:abhishek_portfolio/mobile/m_header.dart';
 import 'package:abhishek_portfolio/mobile/m_about_me.dart';
 import 'package:abhishek_portfolio/mobile/m_education.dart';
@@ -68,7 +69,7 @@ class _HomePageState extends State<HomePage> {
           DS2AboutMe(),
           DS3Education(),
           DS4Experience(),
-          // DS5Volunteering(),
+          DS5Volunteering(),
           // DS6TechNotes(),
           DS7Contact(),
           DS8Footer(),
